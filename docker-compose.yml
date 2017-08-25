@@ -1,0 +1,7 @@
+bind:
+  image: impish-industries/rpi-bind9:latest
+  ports:
+    - "53:53"
+  volumes:
+    - ./bind:/etc/bind
+  restart: always
